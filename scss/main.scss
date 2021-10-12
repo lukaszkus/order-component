@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  height: 100vh;
   font-family: $font-primary;
   background-image: url(../images/pattern-background-desktop.svg);
   background-size: contain;
@@ -22,14 +21,19 @@ body {
 }
 
 .main {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   .box {
+    margin-top: 50px;
     background-color: #fff;
-    width: 450px;
+    max-width: 450px;
     border-radius: 20px;
+    box-shadow: 0 20px 30px -10px rgba($color-desaturated, 0.5);
+    padding: 0 50px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
     &__img {
       border-radius: 20px 20px 0 0;
     }
@@ -44,17 +48,19 @@ body {
       color: $color-desaturated;
       text-align: center;
       line-height: 1.5;
-      padding: 0 50px 20px 50px;
+      padding: 0 0 20px 0;
     }
     &__price {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       background-color: $color-very-pale;
       border-radius: 10px;
       padding: 20px;
-      margin: 0 50px;
+      width: 100%;
       &-details {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
         padding: 0 20px;
         &-title {
           color: $color-dark;
@@ -63,16 +69,56 @@ body {
           color: $color-desaturated;
         }
       }
+      &-link {
+        color: $color-bright;
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin-left: 60px;
+        &:hover {
+          text-decoration: none;
+          opacity: 0.7;
+          cursor: pointer;
+        }
+      }
     }
-    &__price-link {
-      color: $color-bright;
+    &__btn {
+      width: 100%;
+      margin: 30px 0;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: $color-bright;
+      border: none;
+      color: #fff;
       font-weight: 700;
-      font-size: 0.9rem;
+      font-family: $font-primary;
+      box-shadow: 0 20px 30px -5px rgba($color-desaturated, 0.5);
       &:hover {
-        text-decoration: none;
         opacity: 0.7;
         cursor: pointer;
       }
+    }
+    &__link {
+      margin: 20px 0 60px 0;
+      font-weight: 700;
+      font-family: $font-primary;
+      color: $color-desaturated;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        color: $color-dark;
+      }
+    }
+  }
+}
+
+.attribution {
+  text-align: center;
+  padding: 40px 0 20px 0;
+  font-size: 0.75rem;
+  a {
+    color: $color-desaturated;
+    &:hover {
+      color: $color-bright;
     }
   }
 }
