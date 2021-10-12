@@ -7,6 +7,70 @@
 
 html {
   font-size: 16px;
+}
+
+body {
+  height: 100vh;
   font-family: "Red Hat Display", sans-serif;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .box {
+  background-color: #fff;
+  width: 450px;
+  border-radius: 20px;
+}
+.main .box__img {
+  border-radius: 20px 20px 0 0;
+}
+.main .box__title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #1f2f56;
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+.main .box__txt {
+  color: #7280a7;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 50px 20px 50px;
+}
+.main .box__price {
+  display: flex;
+  align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 50px;
+}
+.main .box__price-details {
+  width: 100%;
+  padding: 0 20px;
+}
+.main .box__price-details-title {
+  color: #1f2f56;
+}
+.main .box__price-details-value {
+  color: #7280a7;
+}
+.main .box__price-link {
+  color: #3829e0;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.main .box__price-link:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

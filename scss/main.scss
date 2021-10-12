@@ -10,5 +10,69 @@
 
 html {
   font-size: 16px;
+}
+
+body {
+  height: 100vh;
   font-family: $font-primary;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: $color-pale;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box {
+    background-color: #fff;
+    width: 450px;
+    border-radius: 20px;
+    &__img {
+      border-radius: 20px 20px 0 0;
+    }
+    &__title {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: $color-dark;
+      text-align: center;
+      padding: 30px 0 20px 0;
+    }
+    &__txt {
+      color: $color-desaturated;
+      text-align: center;
+      line-height: 1.5;
+      padding: 0 50px 20px 50px;
+    }
+    &__price {
+      display: flex;
+      align-items: center;
+      background-color: $color-very-pale;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 0 50px;
+      &-details {
+        width: 100%;
+        padding: 0 20px;
+        &-title {
+          color: $color-dark;
+        }
+        &-value {
+          color: $color-desaturated;
+        }
+      }
+    }
+    &__price-link {
+      color: $color-bright;
+      font-weight: 700;
+      font-size: 0.9rem;
+      &:hover {
+        text-decoration: none;
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+  }
 }
