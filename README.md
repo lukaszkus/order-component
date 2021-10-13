@@ -1,4 +1,4 @@
-# Frontend Mentor - 3-column preview card component solution
+# Frontend Mentor - Order summary component
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
 
@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/css-custom-properties-css-flexbox-css-grid-xOljzZQUJ](https://www.frontendmentor.io/solutions/css-custom-properties-css-flexbox-css-grid-xOljzZQUJ)
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-with-sass-bem-and-gulp-nT1yovet4](https://www.frontendmentor.io/solutions/order-summary-component-with-sass-bem-and-gulp-nT1yovet4)
 - Live Site URL: [https://lukaszkus.github.io/3-column-component/](https://lukaszkus.github.io/3-column-component/)
 
 ## My process
