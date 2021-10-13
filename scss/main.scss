@@ -13,19 +13,24 @@ html {
 }
 
 body {
+  height: 100vh;
   font-family: $font-primary;
   background-image: url(../images/pattern-background-desktop.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: $color-pale;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100%;
   .box {
-    margin-top: 50px;
     background-color: #fff;
     max-width: 450px;
     border-radius: 20px;
@@ -113,9 +118,10 @@ body {
 
 .attribution {
   text-align: center;
-  padding: 40px 0 20px 0;
   font-size: 0.75rem;
+  padding: 10px 0;
   a {
+    display: inline-block;
     color: $color-desaturated;
     &:hover {
       color: $color-bright;

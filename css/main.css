@@ -10,20 +10,25 @@ html {
 }
 
 body {
+  height: 100vh;
   font-family: "Red Hat Display", sans-serif;
   background-image: url(../images/pattern-background-desktop.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #e0e8ff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 .main .box {
-  margin-top: 50px;
   background-color: #fff;
   max-width: 450px;
   border-radius: 20px;
@@ -110,10 +115,11 @@ body {
 
 .attribution {
   text-align: center;
-  padding: 40px 0 20px 0;
   font-size: 0.75rem;
+  padding: 10px 0;
 }
 .attribution a {
+  display: inline-block;
   color: #7280a7;
 }
 .attribution a:hover {
