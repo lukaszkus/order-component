@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-with-sass-bem-and-gulp-nT1yovet4](https://www.frontendmentor.io/solutions/order-summary-component-with-sass-bem-and-gulp-nT1yovet4)
-- Live Site URL: [https://lukaszkus.github.io/3-column-component/](https://lukaszkus.github.io/3-column-component/)
+- Live Site URL: [https://lukaszkus.github.io/order-component/](https://lukaszkus.github.io/3-column-component/)
 
 ## My process
 
