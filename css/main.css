@@ -10,15 +10,15 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Red Hat Display", sans-serif;
   background-image: url(../images/pattern-background-desktop.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #e0e8ff;
-  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .main {
@@ -34,6 +34,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 20px 30px -10px rgba(114, 128, 167, 0.5);
   padding: 0 50px;
+  margin: 20px 0;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -124,5 +125,45 @@ body {
 }
 .attribution a:hover {
   color: #3829e0;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+
+  .main .box {
+    width: 320px;
+    padding: 0 25px;
+  }
+  .main .box__img {
+    width: 320px;
+  }
+  .main .box__title {
+    font-size: 1.4rem;
+    padding: 30px 0 20px 0;
+  }
+  .main .box__price {
+    padding: 15px;
+  }
+  .main .box__price-details {
+    padding: 0 20px;
+  }
+  .main .box__price-details-title {
+    font-size: 0.9rem;
+  }
+  .main .box__price-details-value {
+    font-size: 0.9rem;
+  }
+  .main .box__price-link {
+    font-size: 0.7rem;
+    margin-left: 20px;
+  }
+  .main .box__btn {
+    margin-bottom: 20px;
+  }
+  .main .box__link {
+    margin: 10px 0 35px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

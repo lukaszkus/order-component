@@ -13,15 +13,15 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: $font-primary;
   background-image: url(../images/pattern-background-desktop.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: $color-pale;
-  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .main {
@@ -36,6 +36,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 20px 30px -10px rgba($color-desaturated, 0.5);
     padding: 0 50px;
+    margin: 20px 0;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -125,6 +126,48 @@ body {
     color: $color-desaturated;
     &:hover {
       color: $color-bright;
+    }
+  }
+}
+
+@include tablet {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+
+  .main {
+    .box {
+      width: 320px;
+      padding: 0 25px;
+      &__img {
+        width: 320px;
+      }
+      &__title {
+        font-size: 1.4rem;
+        padding: 30px 0 20px 0;
+      }
+      &__price {
+        padding: 15px;
+        &-details {
+          padding: 0 20px;
+          &-title {
+            font-size: 0.9rem;
+          }
+          &-value {
+            font-size: 0.9rem;
+          }
+        }
+        &-link {
+          font-size: 0.7rem;
+          margin-left: 20px;
+        }
+      }
+      &__btn {
+        margin-bottom: 20px;
+      }
+      &__link {
+        margin: 10px 0 35px 0;
+      }
     }
   }
 }
